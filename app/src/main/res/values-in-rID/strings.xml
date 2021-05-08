@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name = "app_name">Github User App</string>
+    <string name = "user_s_avatar">User\'s Avatar</string>
+    <string name = "build">© Deviko Kelvin 2021 | Seluruh hak cipta\nFinal Beta Build 0.2.15_041821–2223</string>
+    <string name = "follower">Pengikut</string>
+    <string name = "following">Mengikuti</string>
+    <string name = "repository">Repositori</string>
+    <string name = "search">Cari</string>
+    <string name = "search_hint">Cari username disini</string>
+    <string name = "development_mode">Mode Pengembangan</string>
+    <string name = "change_language">Ganti Bahasa</string>
+    <string name = "welcome_to_github_user_app">Selamat Datang di Github User App!\nCari pengguna menggunakan pencarian</string>
+    <string name = "favoritebar">Daftar Favorit</string>
+    <string name = "settingsbar">Pengaturan</string>
+    <string name = "null_info">Tidak ada informasi ditampilkan</string>
+    <string name = "user_not_found">Username tidak ditemukan</string>
+    <string name = "no_followers">Tidak ada pengikut</string>
+    <string name = "no_following">Tidak mengikuti siapapun</string>
+    <string name = "favorited">Difavoritkan!</string>
+    <string name = "favorite">Favorit</string>
+    <string name = "set_reminder">Atur Pengingat</string>
+    <string name = "on">Nyala</string>
+    <string name = "off">Mati</string>
+    <string name = "settings">Pengaturan</string>
+    <string name = "notification">Cari pengguna favoritmu sekarang juga!</string>
+    <string name = "alarmrepeat">Pengingat waktu telah dinyalakan pada pukul</string>
+    <string name = "alarmcancel">Pengingat waktu telah dimatikan</string>
+    <string name = "repeat">Mengulang alarm</string>
+</resources>

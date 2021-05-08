@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name = "app_name">Github Companion App</string>
+    <string name = "user_s_avatar">User\'s Avatar</string>
+    <string name = "build">© Deviko Kelvin 2021 | Seluruh hak cipta\nConsumer Final Build 1.0.8_041821–1932</string>
+    <string name = "about">Tentang</string>
+    <string name = "creator_s_picture">Foto Pembuat</string>
+    <string name = "messages">Aplikasi ini dibuat dan dibangun oleh\n💻</string>
+    <string name = "samuel_deviko_kelvin_setiawan">Samuel Deviko Kelvin Setiawan</string>
+    <string name = "vycrosver_live_com">vycrosver@live.com</string>
+</resources>

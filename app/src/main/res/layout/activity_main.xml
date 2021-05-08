@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="id.devikokelvin.githubuserapp.frontend.activities.MainActivity">
+
+    <SearchView
+        android:id = "@+id/search_field"
+        android:layout_width = "match_parent"
+        android:layout_height = "40dp"
+        android:layout_marginStart = "8dp"
+        android:layout_marginTop = "8dp"
+        android:layout_marginEnd = "8dp"
+        android:iconifiedByDefault="false"
+        app:layout_constraintEnd_toEndOf = "parent"
+        app:layout_constraintStart_toStartOf = "parent"
+        app:layout_constraintTop_toTopOf = "parent"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id = "@+id/rv_list"
+        android:layout_width = "0dp"
+        android:layout_height = "0dp"
+        android:layout_marginStart = "8dp"
+        android:layout_marginTop = "8dp"
+        android:layout_marginEnd = "8dp"
+        android:layout_marginBottom = "8dp"
+        android:visibility = "invisible"
+        android:elevation="8dp"
+        app:layout_constraintBottom_toTopOf = "@+id/build_number"
+        app:layout_constraintEnd_toEndOf = "parent"
+        app:layout_constraintHorizontal_bias = "0.0"
+        app:layout_constraintStart_toStartOf = "parent"
+        app:layout_constraintTop_toBottomOf = "@+id/search_field"
+        app:layout_constraintVertical_bias = "0.0"
+        tools:listitem = "@layout/item_user"/>
+
+    <ProgressBar
+        android:id = "@+id/progressBar"
+        style = "?android:attr/progressBarStyle"
+        android:layout_width = "wrap_content"
+        android:layout_height = "wrap_content"
+        android:visibility = "invisible"
+        app:layout_constraintBottom_toBottomOf = "@+id/rv_list"
+        app:layout_constraintEnd_toEndOf = "@+id/rv_list"
+        app:layout_constraintStart_toStartOf = "@+id/rv_list"
+        app:layout_constraintTop_toTopOf = "@+id/rv_list" />
+
+    <TextView
+        android:id = "@+id/error_message"
+        android:layout_width = "wrap_content"
+        android:layout_height = "wrap_content"
+        android:text = "@string/user_not_found"
+        android:textAlignment = "center"
+        android:textSize = "20sp"
+        android:textStyle = "bold"
+        android:visibility = "invisible"
+        app:layout_constraintBottom_toBottomOf = "@+id/rv_list"
+        app:layout_constraintEnd_toEndOf = "@+id/rv_list"
+        app:layout_constraintStart_toStartOf = "@+id/rv_list"
+        app:layout_constraintTop_toTopOf = "@+id/rv_list"/>
+
+    <ImageView
+        android:id = "@+id/img_octo404"
+        android:layout_width = "200dp"
+        android:layout_height = "200dp"
+        android:contentDescription = "@string/app_name"
+        android:visibility = "invisible"
+        app:layout_constraintBottom_toTopOf = "@+id/build_number"
+        app:layout_constraintEnd_toEndOf = "@+id/rv_list"
+        app:layout_constraintHorizontal_bias = "0.497"
+        app:layout_constraintStart_toStartOf = "@+id/rv_list"
+        app:srcCompat = "@drawable/octofather_timeout"/>
+
+    <TextView
+        android:id = "@+id/txt_welcome"
+        android:layout_width = "wrap_content"
+        android:layout_height = "wrap_content"
+        android:text = "@string/welcome_to_github_user_app"
+        android:textAlignment = "center"
+        android:gravity="center"
+        android:textSize = "24sp"
+        android:textStyle = "bold"
+        app:layout_constraintBottom_toTopOf = "@+id/img_octowelcome"
+        app:layout_constraintEnd_toEndOf = "parent"
+        app:layout_constraintStart_toStartOf = "parent"
+        app:layout_constraintTop_toTopOf = "parent"/>
+
+    <ImageView
+        android:id = "@+id/img_octowelcome"
+        android:layout_width = "200dp"
+        android:layout_height = "200dp"
+        android:contentDescription = "@string/app_name"
+        app:layout_constraintBottom_toTopOf = "@+id/build_number"
+        app:layout_constraintEnd_toEndOf = "parent"
+        app:layout_constraintStart_toStartOf = "parent"
+        app:srcCompat = "@drawable/octocat" />
+
+    <TextView
+        android:id = "@+id/build_number"
+        android:layout_width = "wrap_content"
+        android:layout_height = "wrap_content"
+        android:layout_marginStart = "16dp"
+        android:layout_marginEnd = "16dp"
+        android:layout_marginBottom = "8dp"
+        android:gravity = "center"
+        android:text = "@string/build"
+        android:textAlignment = "center"
+        android:textSize = "12sp"
+        app:layout_constraintBottom_toBottomOf = "parent"
+        app:layout_constraintEnd_toEndOf = "parent"
+        app:layout_constraintStart_toStartOf = "parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

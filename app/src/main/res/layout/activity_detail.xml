@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android = "http://schemas.android.com/apk/res/android"
+    xmlns:app = "http://schemas.android.com/apk/res-auto"
+    xmlns:tools = "http://schemas.android.com/tools"
+    android:id = "@+id/constraint_parent"
+    android:layout_width = "match_parent"
+    android:layout_height = "match_parent"
+    app:argType="activities.DetailActivity"
+    tools:context = "id.devikokelvin.githubuserapp.frontend.activities.DetailedInfoActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id = "@+id/constraint_header"
+        android:layout_width = "match_parent"
+        android:layout_height = "wrap_content"
+        android:layout_marginStart = "8dp"
+        android:layout_marginTop = "16dp"
+        android:layout_marginEnd = "8dp"
+        app:layout_constraintEnd_toEndOf = "parent"
+        app:layout_constraintStart_toStartOf = "parent"
+        app:layout_constraintTop_toTopOf = "parent">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id = "@+id/img_avatar"
+            android:layout_width = "80dp"
+            android:layout_height = "80dp"
+            android:contentDescription = "@string/user_s_avatar"
+            app:layout_constraintStart_toStartOf = "parent"
+            app:layout_constraintTop_toTopOf = "parent"
+            tools:src = "@mipmap/ic_launcher_round"/>
+
+        <TextView
+            android:id = "@+id/txt_name"
+            android:layout_width = "wrap_content"
+            android:layout_height = "wrap_content"
+            android:layout_marginStart = "8dp"
+            android:layout_marginTop = "16dp"
+            android:textAlignment = "textStart"
+            android:textSize = "18sp"
+            android:textStyle = "bold"
+            app:layout_constraintStart_toStartOf = "parent"
+            app:layout_constraintTop_toBottomOf = "@+id/img_avatar"
+            tools:text = "Name"/>
+
+        <TextView
+            android:id = "@+id/txt_bio"
+            android:layout_width = "wrap_content"
+            android:layout_height = "wrap_content"
+            android:layout_marginStart = "8dp"
+            android:layout_marginTop = "8dp"
+            android:textAlignment = "center"
+            android:textSize = "15sp"
+            app:layout_constraintStart_toStartOf = "parent"
+            app:layout_constraintTop_toBottomOf = "@+id/txt_name"
+            tools:text = "Bio"/>
+
+        <TextView
+            android:id = "@+id/txt_company"
+            android:layout_width = "wrap_content"
+            android:layout_height = "wrap_content"
+            android:layout_marginStart = "8dp"
+            android:layout_marginTop = "8dp"
+            android:textAlignment = "textStart"
+            android:textSize = "15sp"
+            app:layout_constraintStart_toStartOf = "parent"
+            app:layout_constraintTop_toBottomOf = "@+id/txt_bio"
+            tools:text = "Company"/>
+
+        <TextView
+            android:id = "@+id/txt_location"
+            android:layout_width = "wrap_content"
+            android:layout_height = "wrap_content"
+            android:layout_marginStart = "8dp"
+            android:layout_marginTop = "8dp"
+            android:textAlignment = "textStart"
+            app:drawableLeftCompat = "@drawable/location_icon"
+            app:layout_constraintStart_toStartOf = "parent"
+            app:layout_constraintTop_toBottomOf = "@+id/txt_company"
+            tools:text = "Location"/>
+
+        <TextView
+            android:id = "@+id/txt_follower"
+            android:layout_width = "wrap_content"
+            android:layout_height = "wrap_content"
+            android:layout_gravity = "center"
+            android:layout_marginStart = "8dp"
+            android:text = "@string/follower"
+            android:textAlignment = "center"
+            android:textSize = "16sp"
+            android:textStyle = "bold"
+            app:layout_constraintBottom_toBottomOf = "@+id/img_avatar"
+            app:layout_constraintEnd_toStartOf = "@+id/txt_following"
+            app:layout_constraintStart_toEndOf = "@+id/img_avatar"
+            app:layout_constraintTop_toTopOf = "parent"/>
+
+        <TextView
+            android:id = "@+id/txt_followercount"
+            android:layout_width = "wrap_content"
+            android:layout_height = "wrap_content"
+            android:layout_gravity = "center"
+            android:textAlignment = "center"
+            android:textSize = "16sp"
+            app:layout_constraintBottom_toTopOf = "@+id/txt_follower"
+            app:layout_constraintEnd_toEndOf = "@+id/txt_follower"
+            app:layout_constraintStart_toStartOf = "@+id/txt_follower"
+            tools:text = "0"/>
+
+        <TextView
+            android:id = "@+id/txt_following"
+            android:layout_width = "wrap_content"
+            android:layout_height = "wrap_content"
+            android:layout_gravity = "center"
+            android:text = "@string/following"
+            android:textAlignment = "center"
+            android:textSize = "16sp"
+            android:textStyle = "bold"
+            app:layout_constraintBottom_toBottomOf = "@+id/img_avatar"
+            app:layout_constraintEnd_toEndOf = "parent"
+            app:layout_constraintStart_toEndOf = "@+id/img_avatar"
+            app:layout_constraintTop_toTopOf = "parent"
+            app:layout_constraintVertical_bias = "0.491"/>
+
+        <TextView
+            android:id = "@+id/txt_followingcount"
+            android:layout_width = "wrap_content"
+            android:layout_height = "wrap_content"
+            android:layout_gravity = "center"
+            android:textAlignment = "center"
+            android:textSize = "16sp"
+            app:layout_constraintBottom_toTopOf = "@+id/txt_following"
+            app:layout_constraintEnd_toEndOf = "@+id/txt_following"
+            app:layout_constraintStart_toStartOf = "@+id/txt_following"
+            tools:text = "0"/>
+
+        <TextView
+            android:id = "@+id/txt_repository"
+            android:layout_width = "wrap_content"
+            android:layout_height = "wrap_content"
+            android:layout_gravity = "center"
+            android:text = "@string/repository"
+            android:textAlignment = "center"
+            android:textSize = "16sp"
+            android:textStyle = "bold"
+            app:layout_constraintBottom_toBottomOf = "@+id/img_avatar"
+            app:layout_constraintEnd_toEndOf = "parent"
+            app:layout_constraintStart_toEndOf = "@+id/txt_following"
+            app:layout_constraintTop_toTopOf = "parent"/>
+
+        <TextView
+            android:id = "@+id/txt_repo"
+            android:layout_width = "wrap_content"
+            android:layout_height = "wrap_content"
+            android:layout_gravity = "center"
+            android:textAlignment = "center"
+            android:textSize = "16sp"
+            app:layout_constraintBottom_toTopOf = "@+id/txt_repository"
+            app:layout_constraintEnd_toEndOf = "@+id/txt_repository"
+            app:layout_constraintStart_toStartOf = "@+id/txt_repository"
+            tools:text = "0"/>
+
+        <ToggleButton
+            android:id = "@+id/fav_togglebtn"
+            android:layout_width = "40dp"
+            android:layout_height = "40dp"
+            android:layout_marginEnd = "8dp"
+            android:layout_marginBottom = "8dp"
+            android:background = "@drawable/fav_toggle_selector"
+            android:focusable = "false"
+            android:focusableInTouchMode = "false"
+            android:textOff = ""
+            android:textOn = ""
+            app:layout_constraintBottom_toBottomOf = "parent"
+            app:layout_constraintEnd_toEndOf = "parent"
+            app:layout_constraintTop_toBottomOf = "@+id/txt_company"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id = "@+id/constraint_body"
+        android:layout_width = "match_parent"
+        android:layout_height = "0dp"
+        android:layout_marginStart = "8dp"
+        android:layout_marginEnd = "8dp"
+        android:elevation="8dp"
+        app:layout_constraintBottom_toTopOf = "@+id/build_number"
+        app:layout_constraintEnd_toEndOf = "parent"
+        app:layout_constraintStart_toStartOf = "parent"
+        app:layout_constraintTop_toBottomOf = "@+id/constraint_header">
+
+        <com.google.android.material.tabs.TabLayout
+            android:id = "@+id/tab_view"
+            android:layout_width = "match_parent"
+            android:layout_height = "wrap_content"
+            app:layout_constraintEnd_toEndOf = "parent"
+            app:layout_constraintStart_toStartOf = "parent"
+            app:layout_constraintTop_toTopOf = "parent">
+
+            <com.google.android.material.tabs.TabItem
+                android:layout_width = "wrap_content"
+                android:layout_height = "wrap_content"
+                android:text = "@string/follower"/>
+
+            <com.google.android.material.tabs.TabItem
+                android:layout_width = "wrap_content"
+                android:layout_height = "wrap_content"
+                android:text = "@string/following"/>
+        </com.google.android.material.tabs.TabLayout>
+
+        <androidx.viewpager2.widget.ViewPager2
+            android:id = "@+id/pager_view"
+            android:layout_width = "0dp"
+            android:layout_height = "0dp"
+            app:layout_constraintBottom_toBottomOf = "parent"
+            app:layout_constraintEnd_toEndOf = "parent"
+            app:layout_constraintStart_toStartOf = "parent"
+            app:layout_constraintTop_toBottomOf = "@+id/tab_view"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ImageView
+        android:id = "@+id/img_octowelcome2"
+        android:layout_width = "200dp"
+        android:layout_height = "200dp"
+        android:layout_marginEnd = "16dp"
+        android:layout_marginBottom = "8dp"
+        android:alpha = "0.75"
+        android:contentDescription = "@string/app_name"
+        app:layout_constraintBottom_toTopOf = "@+id/build_number"
+        app:layout_constraintEnd_toEndOf = "parent"
+        app:srcCompat = "@drawable/octocat" />
+
+    <TextView
+        android:id = "@+id/build_number"
+        android:layout_width = "wrap_content"
+        android:layout_height = "wrap_content"
+        android:layout_marginBottom = "8dp"
+        android:text = "@string/build"
+        android:textAlignment = "center"
+        android:gravity="center"
+        android:textSize = "12sp"
+        app:layout_constraintBottom_toBottomOf = "parent"
+        app:layout_constraintEnd_toEndOf = "parent"
+        app:layout_constraintStart_toStartOf = "parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
