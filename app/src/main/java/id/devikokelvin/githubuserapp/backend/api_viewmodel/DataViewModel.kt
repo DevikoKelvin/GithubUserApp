@@ -35,7 +35,7 @@ class DataViewModel(app: Application) : AndroidViewModel(app)
         connect
             .addHeader(
                 "Authorization",
-                "token 5cbcdd84a7def25ba085d29f872fcd4e390c767b"
+                "token {your token here}"
             )
         connect
             .addHeader(
@@ -104,7 +104,7 @@ class DataViewModel(app: Application) : AndroidViewModel(app)
         connect
             .addHeader(
                 "Authorization",
-                "token 5cbcdd84a7def25ba085d29f872fcd4e390c767b"
+                "token {your token here}"
             )
         connect
             .addHeader(
@@ -174,7 +174,7 @@ class DataViewModel(app: Application) : AndroidViewModel(app)
         connect
             .addHeader(
                 "Authorization",
-                "token 5cbcdd84a7def25ba085d29f872fcd4e390c767b"
+                "token {your token here}"
             )
         connect
             .addHeader(
